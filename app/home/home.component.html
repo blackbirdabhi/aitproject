@@ -1,0 +1,55 @@
+﻿<div align="center">
+    <h1>Hi {{currentUser.firstName}}!</h1>
+    <p>You're logged in!! You can now access our blogs/reviews on various Hotels around the world!</p>
+    <h2 align="center">Hotel Blog</h2>
+    <br>
+    <h3 align="center"><b> 1. The Taj Mahal Palace: Waterfront luminary</b>
+</h3>
+    <p style="text-align:center;">
+    <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_634,c_fill,g_auto,h_357,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170424132528-taj-mahal-hotel.jpg" height="200px" width="300px">
+ </p>
+    <p>
+	When George Harrison wanted sitar lessons, he took notes from maestro Ravi Shankar in one of the Taj Suites. When Jimmy Page and Robert Plant toured India in the 1970s, they made the hotel their Mumbai base. Playing host to cultural icons like these had already made The Taj Mahal Palace a cultural landmark before the 2008 November terrorist attacks seared the hotel into public memory.
+The hotel offers a choice of 543 unique rooms and suites across the Palace and the Tower Wing. The slightly heavier price tag is absolutely worth it once you lay eyes on the stately Gateway of India aglow at night, with yachts bobbing in the distance. Aside from the views, there is round-the-clock butler service, free airport transfers, variable check in/check out times and complimentary breakfast and cocktails.
+"The Taj has always reinvented itself since it was born decades ago and this is what makes it the icon that it is," says general manager Taljinder Singh.
+    </p>
+
+    <br>
+    <h3> <b>2.The Trident Bandra-Kurla: Beige, brown and bronze</b>
+ </h3>
+    <p style="text-align:center;">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/8e/e2/c6/trident-nariman-point.jpg" height="200px" width="300px">
+ </p>
+    <p>
+AThe warm colors and quirky bronze sculptures of the new Trident Bandra-Kurla are the first indication that if you're here to mix business with pleasure, this hotel will serve up a pretty heady cocktail. Those that like a tipple will love the wine tasting room and wine library at Oh Two Two (022, the all day multi-cuisine restaurant), as well as the grappa display and enoteca at the Italian fine dining restuarant, Botticino. Indian specialty restaurant Maya and the in-house delicatessen complete the delectable quartet.
+All rooms and suites come with iPod connectivity, DVD players with a USB plug-and-play port, and all hour valet and laundry services. "The staff has been trained well to extend gracious, personalized and dependable service," says general manager Visheshwar Singh. And if you've brought the kids along, you can book the babysitter to watch them while you're out.
+The first hotel in North Mumbai's new business district, the Trident is 30 minutes from the international airport (on a good traffic day).
+    <br>
+    <h3 align="center"> <b>3. Waterstones Hotel: Which flower do you choose?</b>
+</h3>
+    <p style="text-align:center;">
+    <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_634,c_fill,g_auto,h_357,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170424132013-marine-room.jpg" height="200px" width="300px">
+ </p>
+    <p>
+"A charming little hotel that's big on style," is how Gayle Henriques, the Waterstones Hotel General Manager, describes the Waterstones Hotel and with ten different themes running through this 99-room boutique property, we'd have to agree with her.
+Wireless internet access, SIM cards on request, and a travel desk make life easier if you're here on business. Also ask about the free airport transfers, buffet breakfasts and baggage storage for late check-outs.
+You'll feel like a kid in a candy store. Should it be one of the classy floral suites? The turquoise-and-white Marine Room for the see-through bathrooms? Or the Mountain Room with jazzy cow skin-print sofas? Whatever theme you choose, you'll get ironing facilities, a bar, refrigerator, DVD player and a choice of movies.
+And if the pillows aren't fluffy enough, housekeeping, which comes around twice a day, will be glad to resolve that for you.   <br>
+    <h3 align="center"> <b>4. The Four Seasons Mumbai: Into the Aer</b>
+</h3>
+    <p style="text-align:center;">
+    <img src="https://www.travelmyglobe.com/images/Uploaded/Maharashtra_Taraporewala%20Aquarium,%20Mumbai,%20Maharashtra2.jpg" height="200px" width="300px">
+ </p>
+    <p >
+A decade is a long time in hospitality, but if you ask Vincent Hoogewijs, general manager at the Four Seasons Mumbai, he'll tell you that the ten years they spent waiting to enter the Indian market was worth it.We think so too, since the hotel has given us Mumbai's highest bar (roof top lounge Aer), a fabulous spa and The Club, an exclusive 33rd floor area where members can talk business even as they ponder the vintage of their Cristal Rosé.
+The rooms are child friendly, with cribs, strollers, high chairs and play pens provided at no extra cost. The L'Occitane toiletries are also complimentary. Too bad the seriously comfortable duvets and bathrobes won't fit in a regular suitcase.
+Their fleet of 7 series BMWs will ferry guests around town but if you dread being stuck in Mumbai traffic you can always call for the helicopter.    <br>
+    
+    <h3>All registered users:</h3>
+    <ul>
+        <li *ngFor="let user of users">
+            {{user.username}}-<a (click)="deleteUser(user.id)">Delete</a>
+        </li>
+    </ul>
+    <p><a [routerLink]="['/login']">Logout</a></p>
+</div>
